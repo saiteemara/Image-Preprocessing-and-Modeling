@@ -88,7 +88,6 @@ and <strong>Random Forest</strong> algorithms.
 
 <h2>👩‍💻 Author</h2>
 <p>
-<strong>M. Poojitha</strong><br>
-📍 Telangana, India<br>
+<strong>Teemara Sai</strong><br>
 💡 Interested in Machine Learning, Computer Vision & Data Analysis
 </p>
