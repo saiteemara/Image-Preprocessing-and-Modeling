@@ -1,111 +1,94 @@
-<h1>🖼️ Image Classification & Modeling Project</h1>
+<h1>🖼️ Image Classification Using KNN & Random Forest</h1>
 
 <h2>🔍 Overview</h2>
 <p>
-This project focuses on building an <strong>image classification model</strong> using deep learning. 
-The workflow includes image preprocessing, model training, evaluation, and prediction. 
-The goal is to accurately classify images and understand model performance using real-world data.
+This project performs <strong>image classification</strong> using traditional Machine Learning models 
+instead of deep learning. Images are flattened and converted into numerical feature vectors, 
+scaled using StandardScaler, and classified using <strong>K-Nearest Neighbors (KNN)</strong> 
+and <strong>Random Forest</strong> algorithms.
 </p>
 
 <hr>
 
-<h2>🎯 Objectives</h2>
+<h2>🎯 Project Objectives</h2>
 <ul>
-  <li>Process and prepare image datasets for modeling</li>
-  <li>Build and train a deep learning model for image classification</li>
-  <li>Evaluate model performance using accuracy and loss metrics</li>
-  <li>Make predictions on new/unseen images</li>
+  <li>Load and preprocess image dataset</li>
+  <li>Convert images into a structured feature matrix</li>
+  <li>Apply StandardScaler for normalization</li>
+  <li>Train and evaluate ML models (KNN & RandomForest)</li>
+  <li>Test the model on individual images</li>
 </ul>
 
 <hr>
 
-<h2>📂 Project Workflow</h2>
+<h2>📂 Workflow</h2>
 <ol>
-  <li>Import required libraries (TensorFlow, Keras, NumPy, Matplotlib)</li>
-  <li>Load and explore the image dataset</li>
-  <li>Perform image preprocessing:
+  <li><strong>Load Dataset</strong> and create DataFrame</li>
+  <li><strong>Split</strong> into train and test sets</li>
+  <li><strong>Scale features</strong> using StandardScaler</li>
+  <li>Train models:
     <ul>
-      <li>Resizing</li>
-      <li>Normalization</li>
-      <li>Train-test split</li>
-      <li>Augmentation (optional)</li>
+      <li>K-Nearest Neighbors (KNN)</li>
+      <li>RandomForest Classifier</li>
     </ul>
   </li>
-  <li>Model building using:
-    <ul>
-      <li>Custom CNN</li>
-      <li>or Transfer Learning (e.g., VGG16, ResNet, MobileNet)</li>
-    </ul>
-  </li>
-  <li>Train the model and monitor metrics</li>
-  <li>Evaluate results using accuracy, loss, and confusion matrix</li>
-  <li>Predict results on test images</li>
+  <li>Evaluate accuracy</li>
+  <li>Perform <strong>sample testing</strong> and <strong>individual image prediction</strong></li>
 </ol>
 
 <hr>
 
-<h2>🧠 Model Highlights</h2>
+<h2>🧪 Models Used</h2>
 <ul>
-  <li>Deep learning-based image classifier</li>
-  <li>Uses Convolutional Neural Networks (CNN)</li>
-  <li>Supports multi-class classification</li>
-  <li>Capable of handling real-world image variations</li>
+  <li><strong>RandomForest Classifier</strong></li>
+  <li><strong>K-Nearest Neighbors (KNN)</strong></li>
 </ul>
 
 <hr>
 
-<h2>📊 Evaluation Metrics</h2>
+<h2>📊 Model Performance</h2>
 <ul>
-  <li>Training & validation accuracy</li>
-  <li>Training & validation loss</li>
-  <li>Confusion matrix (class-wise performance)</li>
-  <li>Classification report (Precision, Recall, F1-score)</li>
+  <li><strong>RandomForest Accuracy:</strong> 0.7748</li>
+  <li><strong>KNN Accuracy:</strong> 0.5278</li>
 </ul>
+
+<p>
+✅ RandomForest performed significantly better than KNN due to robustness with high-dimensional image data.
+</p>
 
 <hr>
 
-<h2>🧪 Technologies Used</h2>
+<h2>🧠 Why No Deep Learning?</h2>
 <ul>
-  <li>Python</li>
-  <li>TensorFlow / Keras</li>
-  <li>NumPy & Pandas</li>
-  <li>Matplotlib / Seaborn</li>
-  <li>OpenCV (optional)</li>
+  <li>Focus on classical ML approach</li>
+  <li>Small dataset suitable for non-DL models</li>
+  <li>Faster training without GPU requirement</li>
 </ul>
 
 <hr>
 
 <h2>📌 Features</h2>
 <ul>
-  <li>End-to-end image pipeline</li>
-  <li>Supports real-time prediction on new images</li>
-  <li>Handles data imbalance using augmentation</li>
-  <li>Reusable notebook-based implementation</li>
-</ul>
-
-<hr>
-
-<h2>✅ Results (Replace with your actual values)</h2>
-<ul>
-  <li><strong>Training Accuracy:</strong> 95%</li>
-  <li><strong>Validation Accuracy:</strong> 92%</li>
-  <li><strong>Loss Reduced</strong> steadily over epochs</li>
-  <li><strong>Model Generalizes Well</strong> on test data</li>
+  <li>End-to-end image processing pipeline</li>
+  <li>StandardScaler applied only to training data</li>
+  <li>Supports prediction on new images</li>
+  <li>Clean and simple ML-based implementation</li>
 </ul>
 
 <hr>
 
 <h2>📁 Files in This Repository</h2>
 <ul>
-  <li><code>Image Modeling.ipynb</code> — Complete notebook with code & outputs</li>
-  <li><code>/images</code> — Sample input images (optional)</li>
-  <li><code>model.h5</code> — Saved trained model (if added)</li>
+  <li><code>Image Modeling.ipynb</code> — Full notebook with preprocessing, training & testing</li>
+  <li><code>/sample_images</code> — Optional testing images</li>
+  <li><code>requirements.txt</code> (optional)</li>
 </ul>
 
 <hr>
 
 <h2>👩‍💻 Author</h2>
 <p>
-<strong>Teemara Sai</strong><br>
-💡 Interested in Machine Learning, Deep Learning & Computer Vision
+<strong>M. Poojitha</strong><br>
+📍 Telangana, India<br>
+💡 Interested in Machine Learning, Computer Vision & Data Analysis
 </p>
